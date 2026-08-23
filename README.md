@@ -1,5 +1,7 @@
 # Pixelz Client — 1.21.11 Fabric Hack Client
 
+**Website:** https://ike10010.github.io/PixelzClient/ — Download, docs & 52 modules
+
 A free, open-source **Fabric** utility mod for **Minecraft 1.21.11** built with **Fabric Loader 0.19.3**, **Yarn 1.21.11+build.6**, **Loom 1.14.10** and **Fabric API 0.141.6**. Structure and philosophy inspired by Pixelz Client (mixin-based injection, modular design, ClickGUI).
 
 > **Note:** This is the **last obfuscated Minecraft version** before 1.26.1 / 26.1 unobfuscation (see [Fabric blog](https://fabricmc.net/2025/12/05/12111.html)). Yarn + Intermediary are used here and are still correct for 1.21.11. For 26.1+ you must migrate to Mojang Mappings.
@@ -35,7 +37,7 @@ Inspired by Pixelz Client's module system:
 
 ```bash
 # from project root
-./gradlew build          # → build/libs/pixelz-client-1.0.0.jar
+./gradlew build          # → build/libs/pixelz-client-1.1.0.jar
 ./gradlew runClient      # launch test client (downloads MC 1.21.11)
 ./gradlew genSources     # decompile for IDE
 ```

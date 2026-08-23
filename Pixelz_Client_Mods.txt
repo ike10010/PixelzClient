@@ -1,6 +1,6 @@
 ============================================================
  Pixelz Client - 1.21.11 Fabric Mod
- Mod List (52 Modules) - https://pixelz.client
+ Mod List (52 Modules) - https://ike10010.github.io/PixelzClient/
 ============================================================
  Built with Fabric Loader 0.19.3 | Yarn 1.21.11+build.6
  Loom 1.14.10 | Fabric API 0.141.6 | Java 21
@@ -175,7 +175,7 @@ Original 20 + 13 WURST + 4 PERFORMANCE + 15 REQUESTED
  Build Info
 ============================================================
  Gradle: 9.2.1 (wrapper) | Loom 1.14.10 | Java 21
- Jar: build/libs/pixelz-client-1.0.0.jar (remapped, sourcesJar)
+ Jar: build/libs/pixelz-client-1.1.0.jar (remapped, sourcesJar)
  Mappings: Yarn 1.21.11+build.6:v2 (last obfuscated, 26.1+ Mojang Mappings)
  Run: ./gradlew build | ./gradlew runClient | ./gradlew genSources
 
