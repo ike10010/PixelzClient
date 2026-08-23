@@ -84,7 +84,7 @@ $$('.copy-btn').forEach(btn => {
   });
 });
 
-// Download handling - direct link now points to 1.1.3 jar, just toast
+// Download handling - direct link now points to 1.1.4 jar, just toast
 async function handleDownload(e){
   const href = e.currentTarget.getAttribute('href');
   if(href && href.endsWith('.jar')){
@@ -94,25 +94,25 @@ async function handleDownload(e){
   e.preventDefault();
   // Fallback: try to fetch jar from build output if served locally
   const jarUrls = [
-    '../build/libs/pixelz-client-1.1.3.jar',
-    './pixelz-client-1.1.3.jar',
-    '/build/libs/pixelz-client-1.1.3.jar'
+    '../build/libs/pixelz-client-1.1.4.jar',
+    './pixelz-client-1.1.4.jar',
+    '/build/libs/pixelz-client-1.1.4.jar'
   ];
   for(const url of jarUrls){
     try{
       const res = await fetch(url, {method:'HEAD'});
       if(res.ok){
         window.location.href = url;
-        toast('Downloading pixelz-client-1.1.3.jar');
+        toast('Downloading pixelz-client-1.1.4.jar');
         return;
       }
     }catch{}
   }
   // Fallback: generate a tiny info file download
   const blob = new Blob([
-`Pixelz Client 1.1.3 - 1.21.11 Fabric
+`Pixelz Client 1.1.4 - 1.21.11 Fabric
 Build: ./gradlew build
-Jar: build/libs/pixelz-client-1.1.3.jar
+Jar: build/libs/pixelz-client-1.1.4.jar
 Install: drop into mods/ with Fabric Loader 0.19.3 + Fabric API 0.141.6
 Docs: see README.md and Pixelz_Client_Mods.txt
 `
@@ -149,6 +149,7 @@ addEventListener('keydown', (e)=>{
   }
   if(keys.length>20) keys.shift();
 });
+
 
 
 
