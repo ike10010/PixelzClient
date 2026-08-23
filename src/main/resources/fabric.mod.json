@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "pixelz",
+  "version": "${version}",
+
+  "name": "Pixelz Client",
+  "description": "A free Fabric hack client for 1.21.11 - Pixelz Client (mixin-based utility mod)",
+  "authors": [
+    "Pixelz"
+  ],
+  "contact": {
+    "homepage": "https://pixelz.client",
+    "sources": "https://pixelz.client"
+  },
+
+  "license": "GPL-3.0",
+  "icon": "assets/pixelz/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.pixelz.client.PixelzClient"
+    ]
+  },
+  "mixins": [
+    "pixelz.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "fabric-api": "*",
+    "minecraft": "1.21.11",
+    "java": ">=21"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+out/
+run/
+logs/
+remappedSrc/
+fabric.remappedSrc/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+bin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Fabric
+ fabric-*.json
+
+# Config
+run/config/pixelz/
+
+# logs
+*.log
+build/
+.gradle/
+out/
+run/
+

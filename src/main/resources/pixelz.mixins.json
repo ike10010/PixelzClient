@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.pixelz.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+  ],
+  "client": [
+    "MixinKeyboard",
+    "MixinClientPlayerEntity",
+    "MixinInGameHud",
+    "MixinWorldRenderer",
+    "MixinMinecraftClient",
+    "MixinEntity",
+    "MixinLightmapTextureManager"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
