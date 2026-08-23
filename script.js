@@ -84,10 +84,15 @@ $$('.copy-btn').forEach(btn => {
   });
 });
 
-// Download handling - tries to find real jar, else toast
+// Download handling - direct link now points to 1.1.3 jar, just toast
 async function handleDownload(e){
+  const href = e.currentTarget.getAttribute('href');
+  if(href && href.endsWith('.jar')){
+    toast('Downloading ' + href.split('/').pop());
+    return; // allow browser to follow direct download link
+  }
   e.preventDefault();
-  // Try to fetch jar from build output if served locally
+  // Fallback: try to fetch jar from build output if served locally
   const jarUrls = [
     '../build/libs/pixelz-client-1.1.3.jar',
     './pixelz-client-1.1.3.jar',
