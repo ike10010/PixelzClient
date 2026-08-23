@@ -3,6 +3,7 @@ package com.pixelz.client.mixin;
 import com.pixelz.client.PixelzClient;
 import com.pixelz.client.module.modules.VelocityModule;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.math.Vec3d;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -24,9 +25,9 @@ public class MixinEntity {
         }
     }
 
-    // Cancel velocity update via updateVelocity? For knockback packets more advanced handling would intercept packet
+    // 1.21.11: addVelocity(Vec3d) not (DDD) — fixed descriptor
     @Inject(method = "addVelocity", at = @At("HEAD"), cancellable = true)
-    private void onAddVelocity(double dx, double dy, double dz, CallbackInfo ci) {
+    private void onAddVelocity(Vec3d velocity, CallbackInfo ci) {
         if (PixelzClient.INSTANCE == null) return;
         var vel = PixelzClient.INSTANCE.getModuleManager().get(VelocityModule.class);
         if (vel != null && vel.isEnabled()) {
@@ -35,9 +36,10 @@ public class MixinEntity {
                 if (vel.mode == VelocityModule.Mode.CANCEL) {
                     ci.cancel();
                 } else if (vel.mode == VelocityModule.Mode.REDUCE) {
-                    // scale down
+                    // scale down incoming velocity and apply manually
+                    Vec3d scaled = new Vec3d(velocity.x * vel.horizontal, velocity.y * vel.vertical, velocity.z * vel.horizontal);
                     Entity e = (Entity)(Object)this;
-                    e.setVelocity(e.getVelocity().x * vel.horizontal, e.getVelocity().y * vel.vertical, e.getVelocity().z * vel.horizontal);
+                    e.setVelocity(e.getVelocity().add(scaled));
                     ci.cancel();
                 }
             }
