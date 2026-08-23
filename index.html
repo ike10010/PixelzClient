@@ -86,7 +86,7 @@
           <div class="window-bar">
             <div class="window-dots"><span></span><span></span><span></span></div>
             <span class="window-title">ClickGUI Preview — Right Shift</span>
-            <span class="window-badge">33 MODULES</span>
+            <span class="window-badge">37 MODULES</span>
           </div>
           <div class="window-body">
             <div class="clickgui">
@@ -140,11 +140,13 @@
   <!-- Stats bar -->
   <section class="stats">
     <div class="container stats-inner">
-      <div class="stat"><span class="stat-num">33</span><span class="stat-label">Modules</span></div>
+      <div class="stat"><span class="stat-num">37</span><span class="stat-label">Modules</span></div>
       <div class="stat-div"></div>
       <div class="stat"><span class="stat-num">6</span><span class="stat-label">Categories</span></div>
       <div class="stat-div"></div>
       <div class="stat"><span class="stat-num">13</span><span class="stat-label">Wurst-Inspired</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">4</span><span class="stat-label">Performance</span></div>
       <div class="stat-div"></div>
       <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Open Source GPL-3.0</span></div>
       <div class="stat-div"></div>
@@ -158,16 +160,16 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">EXPLORE</span>
-          <h2>33 Modules. 6 Categories.</h2>
-          <p>Everything you need — Combat to Render. Click a category to filter. All keybindable via <code>/pixelz</code> or ClickGUI.</p>
+          <h2>37 Modules. 6 Categories.</h2>
+          <p>Combat to Render + 4 Performance boosters. Click a category to filter. All keybindable via <code>/pixelz</code> or ClickGUI.</p>
         </div>
         <div class="filter-row" id="filterRow">
-          <button class="chip active" data-filter="all">All <span>33</span></button>
+          <button class="chip active" data-filter="all">All <span>37</span></button>
           <button class="chip" data-filter="combat">Combat <span>6</span></button>
           <button class="chip" data-filter="movement">Movement <span>9</span></button>
           <button class="chip" data-filter="player">Player <span>2</span></button>
           <button class="chip" data-filter="world">World <span>7</span></button>
-          <button class="chip" data-filter="render">Render <span>8</span></button>
+          <button class="chip" data-filter="render">Render <span>12</span></button>
           <button class="chip" data-filter="client">Client <span>1</span></button>
         </div>
       </div>
@@ -214,13 +216,17 @@
         <div class="mod-card wurst" data-cat="render"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge">WURST</span></div><h3>XRay</h3><p>See ores through walls, reload renderer, opacity 120.</p></div>
         <div class="mod-card wurst" data-cat="render"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge">WURST</span></div><h3>CaveFinder</h3><p>Highlights caves & air pockets underground.</p></div>
         <div class="mod-card wurst" data-cat="render"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge">WURST</span></div><h3>Freecam</h3><p>Out-of-body noclip camera, saves pos/yaw/pitch.</p></div>
+        <div class="mod-card" data-cat="render" style="border-color:rgba(0,229,160,0.25)"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#00E5A0;color:#00140e">PERF</span></div><h3>FPSBoost</h3><p>Fast graphics, minimal particles, no clouds, no shadows. +30% FPS.</p></div>
+        <div class="mod-card" data-cat="render" style="border-color:rgba(0,229,160,0.25)"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#00E5A0;color:#00140e">PERF</span></div><h3>EntityCulling</h3><p>Skip far/invisible entities. Max 64 blocks, cull behind wall.</p></div>
+        <div class="mod-card" data-cat="render" style="border-color:rgba(0,229,160,0.25)"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#00E5A0;color:#00140e">PERF</span></div><h3>FastRender</h3><p>Fast math, no distortion/FOV effects, optimize render.</p></div>
+        <div class="mod-card" data-cat="render" style="border-color:rgba(0,229,160,0.25)"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#00E5A0;color:#00140e">PERF</span></div><h3>NoLag</h3><p>Particles/weather/hurtcam off. Anti-lag aggregation.</p></div>
 
         <!-- CLIENT -->
         <div class="mod-card" data-cat="client"><div class="mod-top"><span class="mod-cat client">CLIENT</span><span class="mod-key">RSHIFT</span></div><h3>ClickGUI</h3><p>Panels per Category, click toggle, right-click expand.</p></div>
       </div>
 
       <div class="modules-foot">
-        <span id="moduleCount">Showing 33 of 33 modules</span>
+        <span id="moduleCount">Showing 37 of 37 modules</span>
         <input type="search" id="moduleSearch" placeholder="Search modules...  e.g. fly, crystal, xray" />
       </div>
     </div>
@@ -270,6 +276,12 @@
           <h3>Wurst's Best 13</h3>
           <p>Nuker, XRay, CaveFinder, AutoFish, CrystalAura, BowAimbot, Freecam, FastBreak, FastPlace, AutoTool, Blink, Timer, Parkour.</p>
           <code>Blocks • Combat • Render • Other</code>
+        </div>
+        <div class="feature-card">
+          <div class="f-icon" style="color:#00E5A0">⚡</div>
+          <h3>Performance 4</h3>
+          <p>FPSBoost (minimal particles + no clouds), EntityCulling (64 blocks), FastRender (no FOV/distortion), NoLag (aggregated). Pair with Sodium/Lithium for max.</p>
+          <code>Render • Sodium-compatible • +30% FPS</code>
         </div>
       </div>
     </div>
