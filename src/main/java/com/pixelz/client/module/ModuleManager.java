@@ -12,16 +12,21 @@ public class ModuleManager {
     private final List<Module> modules = new ArrayList<>();
 
     public void load() {
-        // Combat
+        // Combat - requested menu
         register(new KillAuraModule());
-        register(new VelocityModule());
+        register(new VelocityModule()); // Anti-Knockback
         register(new CriticalsModule());
         register(new AutoClickerModule());
         register(new CrystalAuraModule());
         register(new BowAimbotModule());
-        // Movement
-        register(new FlyModule());
-        register(new SpeedModule());
+        register(new AimAssistModule());
+        register(new MultiAuraModule());
+        register(new ClickAuraModule());
+        register(new TriggerBotModule());
+        register(new FastBowModule());
+        // Movement - requested menu
+        register(new FlyModule()); // Flight / CreativeFlight
+        register(new SpeedModule()); // SpeedHack / BunnyHop
         register(new SprintModule());
         register(new NoFallModule());
         register(new JesusModule());
@@ -29,10 +34,14 @@ public class ModuleManager {
         register(new BlinkModule());
         register(new ParkourModule());
         register(new TimerModule());
+        register(new SpiderModule());
+        register(new SafeWalkModule());
         // Player
         register(new NoSlowModule());
         register(new AutoArmorModule());
-        // World - Wurst Blocks must-haves
+        register(new AutoEatModule());
+        register(new AutoSoupModule());
+        // World - Wurst Blocks + requested
         register(new ScaffoldModule());
         register(new ChestStealerModule());
         register(new NukerModule());
@@ -40,7 +49,9 @@ public class ModuleManager {
         register(new FastPlaceModule());
         register(new AutoToolModule());
         register(new AutoFishModule());
-        // Render - Wurst Render best + Performance
+        register(new AutoMineModule());
+        register(new VeinMinerModule());
+        // Render - requested + performance
         register(new ESPModule());
         register(new FullBrightModule());
         register(new TracersModule());
@@ -49,12 +60,16 @@ public class ModuleManager {
         register(new XRayModule());
         register(new CaveFinderModule());
         register(new FreecamModule());
+        register(new ChestESPModule());
+        register(new MobESPModule());
+        register(new PlayerESPModule());
         register(new FPSBoostModule());
         register(new EntityCullingModule());
         register(new FastRenderModule());
         register(new NoLagModule());
         // Client
         register(new ClickGuiModule());
+        register(new AltManagerModule());
 
         modules.sort(Comparator.comparing(Module::getName));
         PixelzClient.LOGGER.info("Registered {} modules", modules.size());

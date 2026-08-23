@@ -70,7 +70,7 @@
           Client
         </h1>
         <p class="hero-desc">
-          A free, open-source utility mod for Minecraft <b>1.21.11</b>. Mixin-based injection, modular design, ClickGUI — with 33 powerful modules inspired by the best of <span>Wurst</span> & Pixelz.
+          A free, open-source utility mod for Minecraft <b>1.21.11</b>. Mixin-based injection, modular design, ClickGUI — with 52 powerful modules covering all Wurst Combat/Movement/World hacks.
         </p>
         <div class="hero-cta" id="download">
           <a href="#" class="btn btn-lg btn-primary" id="downloadBtn">
@@ -98,7 +98,7 @@
           <div class="window-bar">
             <div class="window-dots"><span></span><span></span><span></span></div>
             <span class="window-title">ClickGUI Preview — Right Shift</span>
-            <span class="window-badge">37 MODULES</span>
+            <span class="window-badge">52 MODULES</span>
           </div>
           <div class="window-body">
             <div class="clickgui">
@@ -152,13 +152,15 @@
   <!-- Stats bar -->
   <section class="stats">
     <div class="container stats-inner">
-      <div class="stat"><span class="stat-num">37</span><span class="stat-label">Modules</span></div>
+      <div class="stat"><span class="stat-num">52</span><span class="stat-label">Modules</span></div>
       <div class="stat-div"></div>
       <div class="stat"><span class="stat-num">6</span><span class="stat-label">Categories</span></div>
       <div class="stat-div"></div>
       <div class="stat"><span class="stat-num">13</span><span class="stat-label">Wurst-Inspired</span></div>
       <div class="stat-div"></div>
       <div class="stat"><span class="stat-num">4</span><span class="stat-label">Performance</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">15</span><span class="stat-label">Requested</span></div>
       <div class="stat-div"></div>
       <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Open Source GPL-3.0</span></div>
       <div class="stat-div"></div>
@@ -172,17 +174,17 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">EXPLORE</span>
-          <h2>37 Modules. 6 Categories.</h2>
-          <p>Combat to Render + 4 Performance boosters. Click a category to filter. All keybindable via <code>/pixelz</code> or ClickGUI.</p>
+          <h2>52 Modules. 6 Categories.</h2>
+          <p>Combat (11) to Render (15) + Performance. All requested Wurst menu covered. Click a category to filter.</p>
         </div>
         <div class="filter-row" id="filterRow">
-          <button class="chip active" data-filter="all">All <span>37</span></button>
-          <button class="chip" data-filter="combat">Combat <span>6</span></button>
-          <button class="chip" data-filter="movement">Movement <span>9</span></button>
-          <button class="chip" data-filter="player">Player <span>2</span></button>
-          <button class="chip" data-filter="world">World <span>7</span></button>
-          <button class="chip" data-filter="render">Render <span>12</span></button>
-          <button class="chip" data-filter="client">Client <span>1</span></button>
+          <button class="chip active" data-filter="all">All <span>52</span></button>
+          <button class="chip" data-filter="combat">Combat <span>11</span></button>
+          <button class="chip" data-filter="movement">Movement <span>11</span></button>
+          <button class="chip" data-filter="player">Player <span>4</span></button>
+          <button class="chip" data-filter="world">World <span>9</span></button>
+          <button class="chip" data-filter="render">Render <span>15</span></button>
+          <button class="chip" data-filter="client">Client <span>2</span></button>
         </div>
       </div>
 
@@ -194,6 +196,11 @@
         <div class="mod-card" data-cat="combat"><div class="mod-top"><span class="mod-cat combat">COMBAT</span></div><h3>AutoClicker</h3><p>Auto-clicks when holding attack. 10 CPS.</p></div>
         <div class="mod-card wurst" data-cat="combat"><div class="mod-top"><span class="mod-cat combat">COMBAT</span><span class="wurst-badge">WURST</span></div><h3>CrystalAura</h3><p>Detonates EndCrystals near enemies. Range 12 / 4.5, 100ms delay, rotate.</p></div>
         <div class="mod-card wurst" data-cat="combat"><div class="mod-top"><span class="mod-cat combat">COMBAT</span><span class="wurst-badge">WURST</span></div><h3>BowAimbot</h3><p>Auto-aims bow at nearest LivingEntity within 50 blocks.</p></div>
+        <div class="mod-card" data-cat="combat"><div class="mod-top"><span class="mod-cat combat">COMBAT</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>AimAssist</h3><p>Aimbot / AimAssist - smooth crosshair to nearest entity (range 6, speed 0.5).</p></div>
+        <div class="mod-card" data-cat="combat"><div class="mod-top"><span class="mod-cat combat">COMBAT</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>MultiAura</h3><p>MultiAura - hits up to 3 entities per tick (range 4.5).</p></div>
+        <div class="mod-card" data-cat="combat"><div class="mod-top"><span class="mod-cat combat">COMBAT</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>ClickAura</h3><p>ClickAura - attacks only while holding attack key (range 4.2).</p></div>
+        <div class="mod-card" data-cat="combat"><div class="mod-top"><span class="mod-cat combat">COMBAT</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>TriggerBot</h3><p>TriggerBot - hits when crosshair over LivingEntity (delay 50ms).</p></div>
+        <div class="mod-card" data-cat="combat"><div class="mod-top"><span class="mod-cat combat">COMBAT</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>FastBow</h3><p>FastBow - fast bow shooting (pull 3 ticks vs 20).</p></div>
 
         <!-- MOVEMENT -->
         <div class="mod-card" data-cat="movement"><div class="mod-top"><span class="mod-cat movement">MOVEMENT</span><span class="mod-key">F</span></div><h3>Fly</h3><p>Flying. Modes: VANILLA / CREATIVE, speed 1.0.</p></div>
@@ -205,10 +212,14 @@
         <div class="mod-card wurst" data-cat="movement"><div class="mod-top"><span class="mod-cat movement">MOVEMENT</span><span class="wurst-badge">WURST</span></div><h3>Blink</h3><p>Chokes packets for teleport/lag exploit. Flush on disable.</p></div>
         <div class="mod-card wurst" data-cat="movement"><div class="mod-top"><span class="mod-cat movement">MOVEMENT</span><span class="wurst-badge">WURST</span></div><h3>Parkour</h3><p>Auto-jump at block edges & when horizontalCollision.</p></div>
         <div class="mod-card wurst" data-cat="movement"><div class="mod-top"><span class="mod-cat movement">MOVEMENT</span><span class="wurst-badge">WURST</span></div><h3>Timer</h3><p>Game speed 2.0× velocity multiplier.</p></div>
+        <div class="mod-card" data-cat="movement"><div class="mod-top"><span class="mod-cat movement">MOVEMENT</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>Spider</h3><p>Spider - climb vertical walls like spider (0.2 Y when horizontalCollision).</p></div>
+        <div class="mod-card" data-cat="movement"><div class="mod-top"><span class="mod-cat movement">MOVEMENT</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>SafeWalk</h3><p>SafeWalk - prevents walking off edges (zero velocity at edge).</p></div>
 
         <!-- PLAYER -->
         <div class="mod-card" data-cat="player"><div class="mod-top"><span class="mod-cat player">PLAYER</span></div><h3>NoSlow</h3><p>No slowdown when using items.</p></div>
         <div class="mod-card" data-cat="player"><div class="mod-top"><span class="mod-cat player">PLAYER</span></div><h3>AutoArmor</h3><p>Auto-equips armor when slot empty, 5 tick delay.</p></div>
+        <div class="mod-card" data-cat="player"><div class="mod-top"><span class="mod-cat player">PLAYER</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>AutoEat</h3><p>AutoEat - eats food with FOOD component when hunger ≤16 or health ≤16.</p></div>
+        <div class="mod-card" data-cat="player"><div class="mod-top"><span class="mod-cat player">PLAYER</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>AutoSoup</h3><p>AutoSoup - drinks mushroom/beetroot soup when health ≤12.</p></div>
 
         <!-- WORLD -->
         <div class="mod-card" data-cat="world"><div class="mod-top"><span class="mod-cat world">WORLD</span><span class="mod-key">N</span></div><h3>Scaffold</h3><p>Auto-places blocks under you, tower support.</p></div>
@@ -218,6 +229,8 @@
         <div class="mod-card wurst" data-cat="world"><div class="mod-top"><span class="mod-cat world">WORLD</span><span class="wurst-badge">WURST</span></div><h3>FastPlace</h3><p>Sets itemUseCooldown=0 via reflection.</p></div>
         <div class="mod-card wurst" data-cat="world"><div class="mod-top"><span class="mod-cat world">WORLD</span><span class="wurst-badge">WURST</span></div><h3>AutoTool</h3><p>Switches to best tool when attack key held.</p></div>
         <div class="mod-card wurst" data-cat="world"><div class="mod-top"><span class="mod-cat world">WORLD</span><span class="wurst-badge">WURST</span></div><h3>AutoFish</h3><p>Auto reel when vy &lt; -0.05 & recast, 30s timeout.</p></div>
+        <div class="mod-card" data-cat="world"><div class="mod-top"><span class="mod-cat world">WORLD</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>AutoMine</h3><p>AutoMine - mines nearest block within 5 (attackBlock).</p></div>
+        <div class="mod-card" data-cat="world"><div class="mod-top"><span class="mod-cat world">WORLD</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>VeinMiner</h3><p>VeinMiner - mines entire ore veins from crosshair (range 6).</p></div>
 
         <!-- RENDER -->
         <div class="mod-card" data-cat="render"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="mod-key">K</span></div><h3>ESP</h3><p>Highlights entities through walls, box+health bar.</p></div>
@@ -232,13 +245,17 @@
         <div class="mod-card" data-cat="render" style="border-color:rgba(0,229,160,0.25)"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#00E5A0;color:#00140e">PERF</span></div><h3>EntityCulling</h3><p>Skip far/invisible entities. Max 64 blocks, cull behind wall.</p></div>
         <div class="mod-card" data-cat="render" style="border-color:rgba(0,229,160,0.25)"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#00E5A0;color:#00140e">PERF</span></div><h3>FastRender</h3><p>Fast math, no distortion/FOV effects, optimize render.</p></div>
         <div class="mod-card" data-cat="render" style="border-color:rgba(0,229,160,0.25)"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#00E5A0;color:#00140e">PERF</span></div><h3>NoLag</h3><p>Particles/weather/hurtcam off. Anti-lag aggregation.</p></div>
+        <div class="mod-card" data-cat="render"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>ChestESP</h3><p>ChestESP - highlights chests through terrain.</p></div>
+        <div class="mod-card" data-cat="render"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>MobESP</h3><p>MobESP - highlights mobs through terrain.</p></div>
+        <div class="mod-card" data-cat="render"><div class="mod-top"><span class="mod-cat render">RENDER</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>PlayerESP</h3><p>PlayerESP - highlights players through terrain.</p></div>
 
         <!-- CLIENT -->
         <div class="mod-card" data-cat="client"><div class="mod-top"><span class="mod-cat client">CLIENT</span><span class="mod-key">RSHIFT</span></div><h3>ClickGUI</h3><p>Panels per Category, click toggle, right-click expand.</p></div>
+        <div class="mod-card" data-cat="client"><div class="mod-top"><span class="mod-cat client">CLIENT</span><span class="wurst-badge" style="background:#6D5CFF;color:white">NEW</span></div><h3>AltManager</h3><p>AltManager - switch between Minecraft accounts in-game.</p></div>
       </div>
 
       <div class="modules-foot">
-        <span id="moduleCount">Showing 37 of 37 modules</span>
+        <span id="moduleCount">Showing 52 of 52 modules</span>
         <input type="search" id="moduleSearch" placeholder="Search modules...  e.g. fly, crystal, xray" />
       </div>
     </div>
@@ -257,7 +274,7 @@
           <div class="f-icon">◈</div>
           <h3>ClickGUI — Pixel Perfect</h3>
           <p>Right Shift to open. Category panels, header colors, enabled 0xFF2A2A6E bar, click with sound, right-click to expand. Sorted alphabetically.</p>
-          <code>GUI: 6 panels • Draggable • 33 modules</code>
+          <code>GUI: 6 panels • Draggable • 52 modules</code>
         </div>
         <div class="feature-card">
           <div class="f-icon">⚙</div>
@@ -435,7 +452,7 @@ cd pixelz-client
   <section class="cta">
     <div class="container cta-inner">
       <h2>Ready to drop in?</h2>
-      <p>33 modules • ClickGUI • Config • Commands • GPL-3.0</p>
+      <p>52 modules • ClickGUI • Config • Commands • GPL-3.0 • Performance</p>
       <div class="cta-row">
         <a href="#" class="btn btn-lg btn-primary" id="downloadBtn3"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download Pixelz v1.0.0</a>
         <a href="https://www.youtube.com/@PixelClawzStudio" target="_blank" rel="noopener" class="btn btn-lg btn-youtube">
