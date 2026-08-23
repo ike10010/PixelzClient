@@ -37,7 +37,7 @@ Inspired by Pixelz Client's module system:
 
 ```bash
 # from project root
-./gradlew build          # → build/libs/pixelz-client-1.1.2.jar
+./gradlew build          # → build/libs/pixelz-client-1.1.3.jar
 ./gradlew runClient      # launch test client (downloads MC 1.21.11)
 ./gradlew genSources     # decompile for IDE
 ```
@@ -78,6 +78,7 @@ GPL-3.0 (same as Pixelz Client source in this repository). You must disclose sou
 
 ## Disclaimer
 Utility mod for education/testing. Use only where allowed. Not affiliated with Mojang/MS.
+
 
 
 
