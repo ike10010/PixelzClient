@@ -175,7 +175,7 @@ Original 20 + 13 WURST + 4 PERFORMANCE + 15 REQUESTED
  Build Info
 ============================================================
  Gradle: 9.2.1 (wrapper) | Loom 1.14.10 | Java 21
- Jar: build/libs/pixelz-client-1.1.4.jar (remapped, sourcesJar)
+ Jar: build/libs/pixelz-client-1.1.5.jar (remapped, sourcesJar)
  Mappings: Yarn 1.21.11+build.6:v2 (last obfuscated, 26.1+ Mojang Mappings)
  Run: ./gradlew build | ./gradlew runClient | ./gradlew genSources
 
@@ -191,6 +191,7 @@ Original 20 + 13 WURST + 4 PERFORMANCE + 15 REQUESTED
 ============================================================
  End of Mod List - 52 Modules (20 original + 13 Wurst + 4 Performance + 15 Requested)
 ============================================================
+
 
 
 
